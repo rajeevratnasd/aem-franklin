@@ -9,7 +9,7 @@ export default function decorate(block) {
     const authorDiv = block.querySelector(':scope > div > div');
     if(authorDiv){
         const p = document.createElement('p');
-        p.innerHTML = `&emsp; <em> - ${authorDiv.innerText}</em>`;
+        p.innerHTML = `&emsp; &emsp; &emsp; &emsp; <em> - ${authorDiv.innerText}</em>`;
         authorDiv.parentElement.replaceWith(p);
     }
 }
